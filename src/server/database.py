@@ -8,7 +8,7 @@ class DataBase:
     database_uri = "mongodb+srv://karolineclemos:256428@luizacode.s6afqnm.mongodb.net/?retryWrites=true&w=majority"
     users_collection = None
     address_collection = None
-    product_collection = None
+    products_collection = None
     order_collection = None
     order_items_collection = None
 
@@ -27,7 +27,7 @@ async def connect_db():
     )
     db.users_collection = db.client.shopping_cart.users
     db.address_collection = db.client.shopping_cart.address
-    db.product_collection = db.client.shopping_cart.products
+    db.products_collection = db.client.shopping_cart.products
     db.order_collection = db.client.shopping_cart.orders
     db.order_items_collection = db.client.shopping_cart.order_items
 
