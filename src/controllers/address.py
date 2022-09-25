@@ -7,6 +7,13 @@ from src.server.database import connect_db, db, disconnect_db
 
 
 async def address_crud():
+    print('''
+    Endereços:
+
+    [1] - Criar endereço
+    [2] - Buscar endereço
+    [3] - Deletar endereço
+    ''')
     option = input("Entre com a opção de CRUD: ")
 
     await connect_db()
