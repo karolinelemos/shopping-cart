@@ -25,9 +25,10 @@ async def address_crud():
         "cep": "89555666",
         "district": "Bairro A",
         "city": "Cidade A",
-        "state": "Estado B"
+        "state": "Estado B",
+        "is_delivery": True,
     }]
-    user_email = 'lu_domagalu@gmail.com'
+    user_email = 'teste@gmail.com'
 
     if option == '1':
         # create address

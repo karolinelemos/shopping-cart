@@ -64,3 +64,12 @@ async def delete_address(address_collection, address_id):
             return {'status': 'Address deleted'}
     except Exception as e:
         print(f'delete_address.error: {e}')
+
+
+async def get_available_address(address_collection, user_email):
+    try:
+        address = await address_collection.find_one(
+            {'user.email': user_email, 'address.is_delivery': True})
+        return address
+    except Exception as e:
+        print(f'get_available_address.error: {e}')

@@ -24,7 +24,7 @@ async def users_crud():
     users_collection = db.users_collection
 
     user = {
-        "email": "lu_domagalu@gmail.com",
+        "email": "teste@gmail.com",
         "password": "213sd312re3",
         "is_active": True,
         "is_admin": False
